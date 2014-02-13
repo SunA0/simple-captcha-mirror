@@ -1,9 +1,2 @@
-# Copyright (c) 2008 [Sur http://expressica.com]
-
-require 'simple_captcha_setup'
-require 'simple_captcha_config'
-require 'simple_captcha_image'
-require 'simple_captcha_action_view'
-require 'simple_captcha_action_controller'
-require 'simple_captcha_active_record'
-require 'simple_captcha_controller'
+# encoding: utf-8
+require File.join(File.dirname(__FILE__), "lib", "simple_captcha")
