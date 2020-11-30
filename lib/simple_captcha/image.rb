@@ -62,17 +62,8 @@ module SimpleCaptcha #:nodoc
         text = Utils::simple_captcha_value(simple_captcha_key)
 
         params = ImageHelpers.image_params(SimpleCaptcha.image_style).dup
-        # params << "-size #{SimpleCaptcha.image_size}"
-        # params << "-wave #{amplitude}x#{frequency}"
-        # #params << "-gravity 'Center'"
-        # params << "-gravity \"Center\""
-        # params << "-pointsize #{SimpleCaptcha.point_size}"
-        # params << "-implode 0.2"
-        
-        params << "-size #{SimpleCaptcha.image_size}+100+100"
-        #params << "-region '100x30-20+20'"
+        params << "-size #{SimpleCaptcha.image_size}"
         params << "-wave #{amplitude}x#{frequency}"
-        #params << "-gravity 'Center'"
         params << "-gravity \"South\""
         params << "-pointsize #{SimpleCaptcha.point_size}"
         params << "-implode 0.2"

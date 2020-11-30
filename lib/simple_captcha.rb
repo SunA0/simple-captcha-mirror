@@ -14,7 +14,7 @@ module SimpleCaptcha
   autoload :Middleware,        'simple_captcha/middleware'
 
   mattr_accessor :image_size
-  @@image_size = "100x40"
+  @@image_size = "100x60"
 
   mattr_accessor :length
   @@length = 5
